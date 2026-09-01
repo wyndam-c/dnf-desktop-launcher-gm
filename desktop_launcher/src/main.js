@@ -1554,6 +1554,7 @@ function inventoryItemDetail(item) {
     }
     if (item.forge_level > 0) parts.push(`锻造 +${item.forge_level}`);
   } else {
+    parts.push(`数量 ${item.count_or_grade}`);
   }
   if (item.orb) parts.push(`宝珠 ${item.orb}`);
   return parts.join(" / ") || "-";
