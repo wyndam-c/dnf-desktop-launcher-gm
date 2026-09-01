@@ -1319,7 +1319,7 @@ func insertMailPostal(store *db.Store, tx *sql.Tx, characNo int, letterID int64,
 		currentCount := min(stackLimit, totalCount-sentCount)
 		addInfo := currentCount
 		if isEquipment {
-			addInfo = 1
+			addInfo = 999999998
 		}
 		amplifyOption := 0
 		amplifyValue := 0
